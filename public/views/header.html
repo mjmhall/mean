@@ -6,8 +6,11 @@
         <li data-ng-repeat="item in menu" data-ng-show="global.user" ui-route="/{{item.link}}" ng-class="{active: $uiRoute}">
             <a href="#!/{{item.link}}">{{item.title}}</a>
         </li>
+        <li class=divider-vertical></li>
         <dropdownmenu menudata="dropdown_menu_admin" menutitle="Admin" ></dropdownmenu>
+        <li class=divider-vertical></li>
         <dropdownmenu menudata="dropdown_menu_start" menutitle="Start" ></dropdownmenu>
+        <li class=divider-vertical></li>
         <dropdownmenu menudata="dropdown_menu_status" menutitle="Status" ></dropdownmenu>
     </ul>
     <ul class="nav pull-right" data-ng-hide="global.authenticated">
